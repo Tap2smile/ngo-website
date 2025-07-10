@@ -2,8 +2,8 @@
 /************ GLOBAL CSS *************/
 /*************************************/
 :root {
-    --primary-color: #ff4d4d;
-    --secondary-color: #e04444;
+    --primary-color: #f4a259;
+    --secondary-color: #fdeb96;
     --background-color: #f9f9f9;
     --text-color: #333;
     --hover-color: #555;
@@ -145,7 +145,7 @@ header {
 
 .login-btn a {
     text-decoration: none;
-    color: #e04444;
+    color: #F4A259;
 }
 
 .login-btn a:hover {
@@ -193,14 +193,14 @@ header {
     bottom: 0;
     width: 100%;
     height: 2px;
-    background: red;
+    background: #F4A259;
     transform: scaleX(0);
     transform-origin: center;
     transition: transform var(--animation-timing);
 }
 
 .navbar a:hover {
-    color: red;
+    color: #F4A259;
 }
 
 .navbar a:hover::after {
@@ -340,7 +340,7 @@ header {
 }
 
 .mobile-menu a:hover {
-    color: red;
+    color: #F4A259;
 }
 
 /* Focus Styles */
@@ -348,14 +348,14 @@ a:focus,
 button:focus,
 .donate-btn:focus,
 .login-btn a:focus {
-    outline: 2px solid var(--primary-color);
+    outline: 2px solid #f6d465;
     outline-offset: 2px;
-    box-shadow: 0 0 4px var(--primary-color);
+    box-shadow: 0 0 4px #f6d465;
 }
 
 .navbar a:focus::after {
     transform: scaleX(1);
-    background: var(--primary-color);
+    background: #f6d465;
 }
 
 /* Enhanced Focus Styles */
@@ -364,20 +364,20 @@ button:focus,
 input:focus,
 .donate-btn:focus,
 .login-btn a:focus {
-    outline: 3px solid var(--primary-color);
+    outline: 3px solid #f6d465;
     outline-offset: 3px;
-    box-shadow: 0 0 6px var(--primary-color);
+    box-shadow: 0 0 6px #f6d465;
     border-radius: 4px;
 }
 
 .navbar a:focus::after {
     transform: scaleX(1);
-    background: var(--primary-color);
+    background:#f6d465 ;
 }
 
 input:focus {
-    border: 2px solid var(--primary-color);
-    box-shadow: 0 0 4px var(--primary-color);
+    border: 2px solid #f6d465;
+    box-shadow: 0 0 4px #f6d465;
 }
 
 /*************************************/
@@ -387,7 +387,7 @@ input:focus {
 .mainbox {
     height: 630px;
     width: 100%;
-    background-color: rgb(219, 229, 234);
+    background-color: #FFEDA8;
     display: flex;
     align-items: center;
     flex-direction: column-reverse;
@@ -438,7 +438,7 @@ input:focus {
 .donate-btn {
     margin: 25px auto 0;
     padding: 15px 40px;
-    background-color: var(--primary-color);
+    background-color: #F4A259;
     color: #fff;
     font-size: 1.5rem;
     border: none;
@@ -492,7 +492,7 @@ input:focus {
 
 .card1 {
     justify-content: center;
-    background-color: var(--background-color);
+    background-color: #F4A259;
     color: var(--text-color);
     width: 280px;
     height: 230px;
@@ -565,7 +565,7 @@ input:focus {
 
 .card1 p a{
     font-size: 1rem;
-    color: crimson;
+    color: #F4A259;
     text-decoration: none;
 }
 
@@ -691,15 +691,15 @@ input:focus {
 .events-rcard {
     background-color: #fefefe;
     padding: 20px 25px;
-    border-left: 6px solid #ff6b6b;
+    border-left: 6px solid #F4A259;
     border-radius: 12px;
-    box-shadow: 0 8px 24px rgba(25, 25, 25, 0.2);
+    box-shadow: 0 8px 24px #fdeb9e;
     transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 .events-rcard:hover {
     transform: translateY(-4px);
-    box-shadow: 0 12px 35px rgba(255, 102, 102, 0.25);
+    box-shadow: 0 12px 35px #fdeb9e;
 }
 
 .events-image {
@@ -718,13 +718,13 @@ input:focus {
 .events-text h1 {
     margin: 0 0 10px;
     font-size: 1.8rem;
-    color: #b22222;
+    color: #F4A259;
 }
 
 .events-text h2 {
     margin: 0 0 10px;
     font-size: 1.2rem;
-    color: #e63946;
+    color: #f7c319;
 }
 
 .events-text p,
@@ -765,7 +765,7 @@ input:focus {
 
 .events-icon-text span {
     font-size: 1.4rem;
-    color: #ff6b6b;
+    color: #F4A259;
 }
 
 .events-icon-text h6 {
@@ -783,13 +783,13 @@ input:focus {
 .events-subscribe-btn {
     margin-top: 20px;
     padding: 12px 24px;
-    background-color: #ff6b6b;
+    background-color: #F4A259;
     color: #fff;
     border: none;
     border-radius: 10px;
     font-weight: bold;
     cursor: pointer;
-    box-shadow: 0 5px 15px rgba(255, 107, 107, 0.35);
+    box-shadow: 0 5px 15px #fdeb9e;
     transition: background-color 0.3s ease, transform 0.2s ease;
     width: 100%;
     text-align: center;
@@ -797,7 +797,7 @@ input:focus {
 }
 
 .events-subscribe-btn:hover {
-    background-color: #e63946;
+    background-color: #F4A259;
     transform: translateY(-2px);
 }
 
@@ -1046,7 +1046,7 @@ input:focus {
     height: 200px;
     justify-content: center;
     align-items: center;
-    background: linear-gradient(transparent 40%, rgb(216, 231, 234) 40%) no-repeat;
+    background: linear-gradient(transparent 40%, #f6d465 40%) no-repeat;
 
 }
 
@@ -1074,7 +1074,7 @@ input:focus {
 }
 
 .no2 {
-    background-color: rgb(216, 231, 234);
+    background-color: #f6d465;
     height: 120px;
 }
 

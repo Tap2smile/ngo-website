@@ -387,7 +387,7 @@ input:focus {
 .mainbox {
     height: 630px;
     width: 100%;
-    background-color: #FFEDA8;
+    background-color: #AD9142;
     display: flex;
     align-items: center;
     flex-direction: column-reverse;
@@ -691,7 +691,7 @@ input:focus {
 .events-rcard {
     background-color: #fefefe;
     padding: 20px 25px;
-    border-left: 6px solid #F4A259;
+    border-left: 6px solid #AD9142;
     border-radius: 12px;
     box-shadow: 0 8px 24px #fdeb9e;
     transition: transform 0.2s ease, box-shadow 0.2s ease;
@@ -718,13 +718,13 @@ input:focus {
 .events-text h1 {
     margin: 0 0 10px;
     font-size: 1.8rem;
-    color: #F4A259;
+    color: #AD9142;
 }
 
 .events-text h2 {
     margin: 0 0 10px;
     font-size: 1.2rem;
-    color: #f7c319;
+    color: #C9AC60;
 }
 
 .events-text p,
@@ -765,7 +765,7 @@ input:focus {
 
 .events-icon-text span {
     font-size: 1.4rem;
-    color: #F4A259;
+    color: #AD9142;
 }
 
 .events-icon-text h6 {
@@ -1046,7 +1046,7 @@ input:focus {
     height: 200px;
     justify-content: center;
     align-items: center;
-    background: linear-gradient(transparent 40%, #f6d465 40%) no-repeat;
+    background: linear-gradient(transparent 40%, #AD9142 40%) no-repeat;
 
 }
 
@@ -1074,7 +1074,7 @@ input:focus {
 }
 
 .no2 {
-    background-color: #f6d465;
+    background-color: #AD9142;
     height: 120px;
 }
 

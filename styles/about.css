@@ -8,8 +8,8 @@ body {
     color: #333;
 }
 :root {
-    --primary-color: #ff4d4d;
-    --secondary-color: #e04444;
+    --primary-color: #f4a259;
+    --secondary-color: #fdeb96;
     --background-color: #f9f9f9;
     --text-color: #333;
     --hover-color: #555;
@@ -19,7 +19,7 @@ body {
 }
 
 header {
-    background-color: #f90404;
+    background-color: #AD9142;
     color: white;
     padding: 1rem 0;
     text-align: center;
@@ -41,7 +41,7 @@ main {
 }
 
 .intro h2 {
-    color: #ff5733;
+    color: #F4A259;
     font-size: 1.5rem;
 }
 
@@ -93,7 +93,7 @@ main {
 .progress-bar span {
     display: block;
     height: 100%;
-    background-color: #ff5733;
+    background-color: #F4A259;
     width: 0%;
 }
 
@@ -270,13 +270,14 @@ footer nav ul li a:hover {
     color: #aaa;
 }
 
+/* Scroll to Top Button */
 #scrollToTop {
     position: fixed;
     bottom: 20px;
     right: 20px;
     width: 50px;
     height: 50px;
-    background: #ff4757;
+    background: #f4a259;
     border-radius: 50%;
     display: flex;
     justify-content: center;
@@ -287,7 +288,6 @@ footer nav ul li a:hover {
     transform: scale(0.5);
     transition: opacity 0.3s ease, transform 0.3s ease;
 }
-
 /* Show Button on Scroll */
 #scrollToTop.show {
     opacity: 1;
@@ -330,6 +330,7 @@ footer nav ul li a:hover {
     transition: all 0.3s ease;
     font-variant-numeric: tabular-nums;
 }
+
 
 a[href="../index.html"] {
     position: absolute;

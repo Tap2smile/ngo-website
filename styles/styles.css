@@ -1190,7 +1190,7 @@ input:focus {
     right: 20px;
     width: 50px;
     height: 50px;
-    background: #ff4757;
+    background: #f4a259;
     border-radius: 50%;
     display: flex;
     justify-content: center;
@@ -2074,8 +2074,8 @@ input:focus {
 }
 
 .dark-mode .events-rcard {
-    border-left-color: #ff6b6b;
-    border-left: 6px solid #ff6b6b;
+    border-left-color: #F4A259;
+    border-left: 6px solid #F4A259;
 
 }
 
@@ -2131,14 +2131,14 @@ input:focus {
 }
 
 .dark-mode .events-subscribe-btn {
-    background-color: #ff6b6b;
+    background-color: #F4A259;
     color: #fff;
     box-shadow: 0 0 15px rgba(255, 107, 107, 0.3);
     transition: box-shadow 0.3s ease, transform 0.3s ease;
 }
 
 .dark-mode .events-subscribe-btn:hover {
-    background-color: #e63946;
+    background-color: #F4A259;
     transform: translateY(-2px);
     box-shadow: 0 0 25px rgba(255, 107, 107, 0.5);
 }
@@ -2256,13 +2256,13 @@ body.dark-mode .dark-logo {
 }
 
 ::-webkit-scrollbar-thumb {
-    background: linear-gradient(180deg, #f90000, #7d2e44);
+    background: linear-gradient(180deg, #fdeb96, #F4A259);
     border-radius: 10px;
     border: 2px solid #f0f0f0;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background: linear-gradient(180deg, #bb6c66, #8e3838);
+    background: linear-gradient(180deg, #F4A259, #fdeb96);
 }
 
 html {

@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tap To Smile Volunteer Application Form</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 font-sans">
+  <div class="container mx-auto px-4 py-8">
+    <h1 class="text-3xl font-bold text-center mb-6">Tap To Smile Volunteer Application Form</h1>
+    <p class="text-center mb-8">Thank you for your interest in volunteering with us! We appreciate your willingness to share your time and skills with our organisation. Please take a few minutes to fill out this application form to help us get to know you better.</p>
+    
+    <form id="volunteerForm" class="bg-white p-6 rounded-lg shadow-md max-w-2xl mx-auto" onsubmit="handleSubmit(event)">
+      <!-- Full Name -->
+      <div class="mb-4">
+        <label for="fullName" class="block text-sm font-medium text-gray-700">Your Full Name</label>
+        <input type="text" id="fullName" name="fullName" required class="mt-1 p-2 w-full border rounded-md">
+      </div>
+
+      <!-- Occupation -->
+      <div class="mb-4">
+        <label for="occupation" class="block text-sm font-medium text-gray-700">Occupation</label>
+        <input type="text" id="occupation" name="occupation" required class="mt-1 p-2 w-full border rounded-md">
+      </div>
+
+      <!-- Date of Birth -->
+      <div class="mb-4">
+        <label class="block text-sm font-medium text-gray-700">Date of Birth</label>
+        <div class="flex space-x-2">
+          <input type="number" id="dobDay" name="dobDay" placeholder="Day" required min="1" max="31" class="mt-1 p-2 w-1/3 border rounded-md">
+          <input type="number" id="dobMonth" name="dobMonth" placeholder="Month" required min="1" max="12" class="mt-1 p-2 w-1/3 border rounded-md">
+          <input type="number" id="dobYear" name="dobYear" placeholder="Year" required min="1900" max="2025" class="mt-1 p-2 w-1/3 border rounded-md">
+        </div>
+      </div>
+
+      <!-- Gender -->
+      <div class="mb-4">
+        <label class="block text-sm font-medium text-gray-700">Gender</label>
+        <select id="gender" name="gender" required class="mt-1 p-2 w-full border rounded-md">
+          <option value="">Select Gender</option>
+          <option value="Male">Male</option>
+          <option value="Female">Female</option>
+          <option value="Other">Other</option>
+        </select>
+      </div>
+
+      <!-- Email -->
+      <div class="mb-4">
+        <label for="email" class="block text-sm font-medium text-gray-700">Your Email ID</label>
+        <input type="email" id="email" name="email" required class="mt-1 p-2 w-full border rounded-md">
+      </div>
+
+      <!-- How did you hear about us -->
+      <div class="mb-4">
+        <label for="source" class="block text-sm font-medium text-gray-700">How did you get to know about Tap To Smile?</label>
+        <input type="text" id="source" name="source" required class="mt-1 p-2 w-full border rounded-md">
+      </div>
+
+      <!-- Role -->
+      <div class="mb-4">
+        <label class="block text-sm font-medium text-gray-700">Would like to join in as?</label>
+        <div class="mt-1">
+          <label class="inline-flex items-center">
+            <input type="radio" name="role" value="Volunteer" required class="form-radio">
+            <span class="ml-2">Volunteer</span>
+          </label>
+          <label class="inline-flex items-center ml-6">
+            <input type="radio" name="role" value="Intern" class="form-radio">
+            <span class="ml-2">Intern</span>
+          </label>
+        </div>
+      </div>
+
+      <!-- Volunteer Duration -->
+      <div class="mb-4">
+        <label class="block text-sm font-medium text-gray-700">What would the time period/duration be while joining as a volunteer?</label>
+        <select id="volunteerDuration" name="volunteerDuration" class="mt-1 p-2 w-full border rounded-md">
+          <option value="">Select Duration</option>
+          <option value="3-6 months">3 - 6 months</option>
+          <option value="6 months - 1 year">6 months - 1 year</option>
+          <option value="1 year & above">1 year & above</option>
+        </select>
+      </div>
+
+      <!-- Intern Duration -->
+      <div class="mb-4">
+        <label class="block text-sm font-medium text-gray-700">What would the time period/duration be while joining as an intern?</label>
+        <select id="internDuration" name="internDuration" class="mt-1 p-2 w-full border rounded-md">
+          <option value="">Select Duration</option>
+          <option value="3-6 months">3 - 6 months</option>
+          <option value="6 months - 1 year">6 months - 1 year</option>
+          <option value="1 year & above">1 year & above</option>
+        </select>
+      </div>
+
+      <!-- City -->
+      <div class="mb-4">
+        <label for="city" class="block text-sm font-medium text-gray-700">Which city would you be available to volunteer/intern? (Preferred city & area)</label>
+        <select id="city" name="city" required class="mt-1 p-2 w-full border rounded-md">
+          <option value="">Select City</option>
+          <option value="Pune">Pune</option>
+          <option value="Mumbai">Mumbai</option>
+          <option value="Hyderabad">Hyderabad</option>
+          <option value="Chandigarh">Chandigarh</option>
+          <option value="Remote">Remote</option>
+        </select>
+      </div>
+
+      <!-- ID Proof -->
+      <div class="mb-4">
+        <label for="idProof" class="block text-sm font-medium text-gray-700">Kindly attach one ID proof</label>
+        <input type="file" id="idProof" name="idProof" accept=".pdf,.jpg,.jpeg,.png" class="mt-1 p-2 w-full border rounded-md">
+      </div>
+
+      <!-- Interests & Skills -->
+      <div class="mb-4">
+        <label for="interests" class="block text-sm font-medium text-gray-700">Interests & Skills</label>
+        <textarea id="interests" name="interests" rows="4" class="mt-1 p-2 w-full border rounded-md"></textarea>
+      </div>
+
+      <!-- Suggestions -->
+      <div class="mb-4">
+        <label for="suggestions" class="block text-sm font-medium text-gray-700">Suggestions if any</label>
+        <textarea id="suggestions" name="suggestions" rows="4" class="mt-1 p-2 w-full border rounded-md"></textarea>
+      </div>
+
+      <!-- Contact Number -->
+      <div class="mb-4">
+        <label for="contact" class="block text-sm font-medium text-gray-700">Contact No (WhatsApp number preferred)</label>
+        <input type="tel" id="contact" name="contact" required class="mt-1 p-2 w-full border rounded-md">
+      </div>
+
+      <!-- Submit Button -->
+      <div class="text-center">
+        <button type="submit" class="bg-blue-500 text-white px-4 py-2 rounded-md hover:bg-blue-600">Submit Application</button>
+      </div>
+    </form>
+  </div>
+
+  <script>
+    function handleSubmit(event) {
+      event.preventDefault();
+      const form = event.target;
+      const formData = new FormData(form);
+      
+      // Basic validation
+      const dobDay = formData.get('dobDay');
+      const dobMonth = formData.get('dobMonth');
+      const dobYear = formData.get('dobYear');
+      
+      if (dobDay < 1 || dobDay > 31 || dobMonth < 1 || dobMonth > 12 || dobYear < 1900 || dobYear > 2025) {
+        alert('Please enter a valid date of birth.');
+        return;
+      }
+
+      // For demonstration, log form data to console
+      const data = {};
+      for (const [key, value] of formData.entries()) {
+        data[key] = value;
+      }
+      console.log('Form Data:', data);
+      alert('Form submitted successfully! Check console for form data.');
+      
+      // Reset form
+      form.reset();
+    }
+  </script>
+</body>
+</html>
